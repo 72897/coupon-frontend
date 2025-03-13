@@ -18,7 +18,7 @@ const Home = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/coupons/claim-coupon"
+        "https://coupon-backend-xio4.onrender.com/api/coupons/claim-coupon"
       );
 
       setCoupon(response.data.coupon);
